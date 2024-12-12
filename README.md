@@ -6,8 +6,6 @@ Este proyecto implementa un sistema de monitoreo IoT basado en Python para recop
 - [Características](#caracteristícas)
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Contribuir](#contribuir)
-- [License](#license)
 
 ## Caracteristícas
 
@@ -17,3 +15,7 @@ Este proyecto implementa un sistema de monitoreo IoT basado en Python para recop
 - Interfaz web basada en Flask para visualizar los datos del sensor.
 - Alertas mediante un buzzer y un LED para condiciones específicas.
 - Compatible con hardware Raspberry Pi y sensores Grove.
+
+##   Uso
+
+Ejecuta python3 app.py y abre en el navegador la dirección web que te indica.
