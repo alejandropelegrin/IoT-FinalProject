@@ -11,6 +11,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import requests
+import threading
 
 
 
@@ -33,7 +34,7 @@ SILENCE_THRESHOLD = 10
 SOUND_SENSOR_PIN = 18
 BUZZER_PIN = 16
 PIR_PIN = 24
-LED_PIN = 26  # Pin del LED
+LED_PIN = 26
 
 # GPIO inizializaztion
 GPIO.setup(BUZZER_PIN, GPIO.OUT)
@@ -207,7 +208,7 @@ class SensorSystem:
         finally:
             GPIO.cleanup()
 
-# Rutas de Flask
+# Flask route
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -256,7 +257,6 @@ def trigger_alert():
     send_alert_email()
     return "Alert triggered and email sent!", 200
 
-import threading
 
 if __name__ == "__main__":
     system = SensorSystem()
