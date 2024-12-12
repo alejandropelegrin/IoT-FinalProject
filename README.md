@@ -12,6 +12,7 @@ This project is an IoT system designed to mitigate loneliness in elderly individ
     - *Light Levels*: Waits for sufficient light before activating features, as it assumes that the presence of light indicates someone is likely at home or actively using the space.
     - *Sound Levels*: Detects prolonged silence and triggers alerts.
     - *Proximity*: When a user approaches, the system displays the current temperature and humidity on the LCD.
+    - *Board Temperature*: Measures the Raspberry Pi's internal temperature to monitor its state during operation and prevent overheating.
   - Alerts caregivers via *Telegram* and *email* in emergencies.
   - Activates visual or audible warnings (e.g., LED or buzzer) when thresholds are exceeded.
 - *User-Friendly Dashboard*:
