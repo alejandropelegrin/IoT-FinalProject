@@ -1,21 +1,30 @@
-# IoT-FinalProject
-Este proyecto implementa un sistema de monitoreo IoT basado en Python para recopilar datos de sensores, procesarlos y enviar alertas. Utiliza hardware como sensores de temperatura, humedad, luz, proximidad y sonido, junto con un LCD para mostrar información y una API para interactuar con los datos desde una aplicación web.
+# IoT Sensor Dashboard for Elderly Care
 
-## Contenidos
+This project is an IoT system designed to mitigate loneliness in elderly individuals while ensuring their safety. The system monitors various environmental factors such as temperature, humidity, light, and sound, and provides real-time alerts and notifications in case of unusual activity.
 
-- [Características](#caracteristícas)
-- [Instalación](#instalación)
-- [Uso](#uso)
+## Features
+- *Elderly Care*:
+  - Detects extended periods of silence and sends reminders or notifications to check in on the user.
+  - Displays messages on an LCD to interact with the user.
+- *Safety Monitoring*:
+  - Monitors temperature, humidity, light, and proximity to ensure a safe environment.
+  - Alerts caregivers via Telegram and email in emergencies.
+- *User-Friendly Dashboard*:
+  - A web-based dashboard to view real-time sensor data and trigger manual alerts.
 
-## Caracteristícas
+## Technologies Used
+- *Backend*: Flask (Python).
+- *Frontend*: HTML and CSS.
+- *Database*: InfluxDB.
+- *Hardware*:
+  - Sensors: DHT11 for temperature and humidity, ultrasonic for proximity, red led buttom, and light and sound sensors.
+  - Raspberry Pi GPIO for managing sensors and actuators.
+  - LCD
 
-- Monitoreo de temperatura, humedad, luz, proximidad y sonido.
-- Almacenamiento de datos en una base de datos InfluxDB.
-- Notificaciones automáticas mediante Telegram y correo electrónico.
-- Interfaz web basada en Flask para visualizar los datos del sensor.
-- Alertas mediante un buzzer y un LED para condiciones específicas.
-- Compatible con hardware Raspberry Pi y sensores Grove.
-
-##   Uso
-
-Ejecuta python3 app.py y abre en el navegador la dirección web que te indica.
+## Installation
+### Prerequisites
+- Raspberry Pi with Raspbian OS.
+- Python 3.x installed.
+- Required dependencies:
+  ```bash
+  pip install flask RPi.GPIO influxdb grove.py
