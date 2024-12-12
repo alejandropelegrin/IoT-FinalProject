@@ -9,7 +9,7 @@ This project is an IoT system designed to mitigate loneliness in elderly individ
 - *Safety Monitoring*:
   - Continuously monitors:
     - *Temperature* and *Humidity*: Ensures a safe environment by tracking environmental conditions.
-    - *Light Levels*: Waits for sufficient light before activating features.
+    - *Light Levels*: Waits for sufficient light before activating features, as it assumes that the presence of light indicates someone is likely at home or actively using the space.
     - *Sound Levels*: Detects prolonged silence and triggers alerts.
     - *Proximity*: When a user approaches, the system displays the current temperature and humidity on the LCD.
   - Alerts caregivers via *Telegram* and *email* in emergencies.
