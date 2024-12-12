@@ -46,6 +46,7 @@ This project is an IoT system designed to mitigate loneliness in elderly individ
 ### 1. Clone this repository
 ### 2. Configure the app.py file with your InfluxDB and Telegram credentials.
 ### 3. Start the Flask server:
-  ```bash
-  python3 app.py
-
+```bash
+  pip install flask RPi.GPIO influxdb grove.py
+  
+### 4. Access the dashboard in your browser at http://<RASPBERRY_PI_IP>:5000.
